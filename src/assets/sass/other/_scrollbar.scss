@@ -1,0 +1,20 @@
+//"Binario" della Barra
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+//La Barra effettiva
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+//Hover sulla Barra
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+//Larghezza della Barra e del Binario
+::-webkit-scrollbar {
+  width: 10px;
+}

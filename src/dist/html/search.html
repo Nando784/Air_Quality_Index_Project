@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Base Tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <title>Search</title>
+<script defer src="../home.bundle.js"></script><script defer src="../search.bundle.js"></script><script defer src="../map.bundle.js"></script><script defer src="../details.bundle.js"></script></head>
+<body>
+<div class="div-head text-center">
+    <h1 class="title dark-font"><strong>Air Quality Index</strong></h1>
+</div>
+<div class="page-wrapper">
+    <div class="div-bg">
+        <div class="ui-div dark-font">
+            <div class="info-txt">
+                <h2>Select a Station</h2>
+                <hr style="width: 80%;">
+                <p>Use the Location Services to Locate the Closest Station or Manually Enter the Name of a City to Show
+                    the Stations Present.</p>
+            </div>
+
+            <button id="gps-btn" class="btn btn-secondary"><img id="nav-ico" class="navigation-icon" alt="Nav">Current
+                Location
+            </button>
+            <div style="width: 12rem">
+                <div class="separator">OR</div>
+            </div>
+            <form class="sent-city-req" method="get" onsubmit="return false">
+                <div class="animation-div">
+                    <input id="city-txt" class="form-control" placeholder="City or Station..">
+                    <button id="input-btn" class="btn btn-transparent"><img id="search-icon" alt="Search"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="card-div" class="card-div"></div>
+
+</div>
+
+
+<!--- Footer -->
+<footer class="text-center" style="clear: column;">
+    <div class="nav">
+        <ul>
+            <li class="nav-item active">
+                <a id="home-link" class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a id="search-link" class="nav-link active" href="#">Search</a>
+            </li>
+            <li class="nav-item">
+                <a id="map-link" class="nav-link" href="map.html">Map</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="social">
+        <h5><strong>in</strong></h5>
+        <a href="https://github.com/Nando784" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nando-sorbello-290399" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <!--Copyright-->
+    <p class="copy">&copy; 2021 NANDO SORBELLO</p>
+</footer>
+
+</body>
+</html>

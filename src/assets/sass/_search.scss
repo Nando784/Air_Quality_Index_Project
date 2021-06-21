@@ -1,0 +1,259 @@
+.div-head{
+  background-color: $bg-dark;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  color: black;
+
+  height: 250px;
+
+  .title{
+    padding: 15px;
+    font-family: sans-serif;
+    text-shadow: 0px -1px 6px rgba(150, 150, 150, 1);
+  }
+
+}
+
+.ui-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  top:-150px;
+
+  width: 500px;
+  border-radius: 10px;
+
+  background-color: $bg-gray;
+
+
+  .info-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px;
+    width: 400px;
+
+    text-align: center;
+  }
+
+  .btn-secondary{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 50px;
+    padding:5px 10px;
+    margin: 5px;
+    font-size: 1.1rem;
+    width: 12rem;
+
+  }
+
+  .navigation-icon {
+    margin: 0 5px;
+  }
+/*--------------------OR------------------*/
+  //Form
+  .sent-city-req{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    .animation-div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #city-txt{
+      width: 12rem;
+      border-radius: 50px;
+      margin: 5px;
+      position: relative;
+      left: 15px;
+    }
+
+    .btn-transparent{
+      visibility: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+
+      border-radius: 15px;
+      font-size: 8px;
+
+      margin: 0;
+
+      position:relative;
+      right: 10px;
+
+
+      border: 1px solid $font-color-dark;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    .btn-transparent:hover{
+      border-color: #86b7fe;
+      box-shadow: 0 0 0 .15rem rgba(13,110,253,.25);
+    }
+
+  }
+
+  .btn-transparent{
+      visibility: visible;
+  }
+
+}
+
+.div-bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+  bottom: 100px;
+}
+
+.page-wrapper{
+  min-height: 100vh;
+  max-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/*---------- Responsive Media Queries ----------*/
+
+//da 769px fino a 1024px (Small Screens, Laptops)
+@media (max-width: 1024px) {
+  //Layout Invariato
+}
+
+//da  481px fino a  768px (iPads, Tablets)
+@media (max-width: 768px) {
+
+  .ui-div{
+    width: 450px;
+  }
+
+  %card{
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+  }
+
+  %preview{
+    width: 100%;
+    height: 250px;
+
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .info-full-container{
+    padding-bottom: 20px;
+    align-items: flex-start;
+  }
+
+  .details{
+    height: 200px;
+
+    padding-right: 5px;
+
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    .location{
+      margin-top: 20px;
+    }
+  }
+}
+
+//da 300px fino a  480px (Mobile Devices)
+@media (max-width: 480px) {
+  .ui-div{
+    width: 300px;
+    .info-txt{
+      width: 200px;
+      font-size: .7em;
+    }
+  }
+
+  %card{
+    width: 300px;
+    height: 650px;
+  }
+
+  .info-full-container{
+    flex-direction: column;
+  }
+
+  .details{
+    height: 100%;
+    .location{
+      margin-top: 0;
+      margin-bottom: -30px;
+    }
+  }
+
+  .nav{
+    font-size: 0.7em;
+  }
+}
+
+//da 0px fino a 320px (xxs)
+@media (max-width: 299px) {
+  .ui-div{
+    width: 200px;
+    .info-txt{
+      width: 150px;
+      font-size: .5em;
+    }
+  }
+
+  %card{
+    width: 200px;
+    height: 650px;
+  }
+
+  .info-full-container{
+    flex-direction: column;
+  }
+
+  .details{
+    height: 100%;
+    .location{
+      margin-top: 0;
+      margin-bottom: -30px;
+    }
+  }
+
+  .nav{
+    font-size: 0.5em;
+  }
+}
+
+

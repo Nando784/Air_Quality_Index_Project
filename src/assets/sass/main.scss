@@ -1,0 +1,30 @@
+@import "other/palette";
+@import "other/fonts";
+@import "other/separator";
+
+@import "other/footer";
+@import "other/scrollbar";
+
+@import "other/animation";
+@import "other/card";
+@import "search";
+@import "home";
+
+
+
+body{
+  font-family: sans-serif;
+
+  background-color: $bg-light;
+}
+
+html, body {
+  margin:0;
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

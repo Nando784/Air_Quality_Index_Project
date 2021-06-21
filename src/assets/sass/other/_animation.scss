@@ -1,0 +1,39 @@
+@keyframes showInput {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
+
+@keyframes hideInput {
+  0% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes showBtn {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+  }
+}
+
+@keyframes hideBtn {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+  }
+}
