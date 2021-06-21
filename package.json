@@ -9,10 +9,10 @@
         "webpack"
     ],
     "private": true,
-    "homepage": "GitHub Link",
+    "homepage": "https://github.com/Nando784",
     "repository": {
         "type": "git",
-        "url": "GitHub Repository Url"
+        "url": "https://github.com/Nando784/Air_Quality_Index_Project/tree/main/src/dist"
     },
     "version": "1.0.0",
     "license": "MIT",

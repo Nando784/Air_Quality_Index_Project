@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94f5c5eb-116c-4014-a308-f064de908db7" name="Default Changelist" comment="" />
+    <list default="true" id="94f5c5eb-116c-4014-a308-f064de908db7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dist/details.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dist/details.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dist/home.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dist/home.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dist/map.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dist/map.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dist/search.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dist/search.bundle.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,11 +23,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -27,6 +39,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1t1fgnaHSsCZFLzQpOR8vHdFN8I" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -139,6 +152,7 @@
       <workItem from="1624226064278" duration="3000" />
       <workItem from="1624283858023" duration="768000" />
       <workItem from="1624286414290" duration="47000" />
+      <workItem from="1624295866834" duration="750000" />
     </task>
     <servers />
   </component>
