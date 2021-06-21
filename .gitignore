@@ -1,2 +1,4 @@
 #Ignora il file contenente le Variabili d'Ambiente
 .env
+#Ignora la cartella creata dall'IDE
+.idea/
