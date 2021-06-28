@@ -1,13 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Base Tag -->
+    <script async="false" defer="false"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzZirIqW4AuY1IaT6whvB2hLzlhorayJY&callback=initMap&libraries=&v=weekly"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <title>Map</title>
 <script defer src="../home.bundle.js"></script><script defer src="../search.bundle.js"></script><script defer src="../map.bundle.js"></script><script defer src="../details.bundle.js"></script></head>
 <body>
-Che Schif La Vit
+    <div class="div-head text-center">
+        <h1 class="title dark-font"><strong><a class="link-dark" style="text-decoration: none;" href="home.html">Air Quality Index</a></strong></h1>
+    </div>
+
+
+
+    <div class="page-wrapper page-map">
+        <div class="div-bg bg-map">
+            <div class="ui-div ui-div-map dark-font">
+                <div class="info-txt" style="width: 100%">
+                    <h2 style="position: relative; z-index: 0; margin-top: 10px;">Station in the World</h2>
+                    <hr style="width: 80%;">
+
+                    <div class="d-flex justify-content-start container-fluid city-list" style="padding: 0;">
+                        <nav class="navbar navbar-expand-xl navbar-light dark-font" style="width: 99%; border-radius: 10px;">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler toogler-btn" type="button" data-toggle="collapse" data-target="#collapseNavbar" data-bs-auto-close="true" aria-controls="collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="collapseNavbar">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly" style="width: 100%">
+                                        <li class="nav-item">
+                                            <button id="world" class="btn bg-transparent">World</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button id="northAmerica" class="btn bg-transparent">North America</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button id="southAmerica" class="btn bg-transparent">South America</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button id="europa" class="btn bg-transparent">Europa</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button id="africa" class="btn bg-transparent">Africa</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button id="middleEast" class="btn bg-transparent">Middle East</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button id="asia" class="btn bg-transparent">Asia</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button id="india" class="btn bg-transparent">India</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button id="cina" class="btn bg-transparent">Cina</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button id="australia" class="btn bg-transparent">Australia</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--- Footer -->
+    <footer class="text-center" style="clear: column;">
+        <div class="nav">
+            <ul>
+                <li class="nav-item active">
+                    <a id="home-link" class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a id="search-link" class="nav-link active" href="#">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a id="map-link" class="nav-link" href="map.html">Map</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <h5><strong>in</strong></h5>
+            <a href="https://github.com/Nando784" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nando-sorbello-290399" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!--Copyright-->
+        <p class="copy">&copy; 2021 NANDO SORBELLO</p>
+    </footer>
+
+
 </body>
 </html>
