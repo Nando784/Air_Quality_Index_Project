@@ -33,6 +33,12 @@ export default class Card {
         }
 
         if (isSingle){
+            this._time=_.get(station,'time.s');
+        }else{
+            this._time=_.get(station,'time.stime');
+        }
+
+        if (isSingle){
             this._latitude=_.get(station,'city.geo[0]');
             this._longitude=_.get(station,'city.geo[1]');
             this._geo=_.get(station,'city.geo');
@@ -48,7 +54,7 @@ export default class Card {
         this._aqi=_.get(station,'aqi');
         this._country=_.get(station,'station.country');
 
-        this._time=_.get(station,'time.s');
+
         this._tz=_.get(station,'time.tz');
 
         return this._htmlCreate();
@@ -261,7 +267,7 @@ export default class Card {
             let locationName=document.createElement('p');
                 locationName.setAttribute('class','location-name');
                 if(typeof this._name!=="undefined")  {
-                    locationName.innerHTML=""+name;
+                    locationName.innerHTML=""+this._name;
                 }else{
                     locationName.innerHTML="-";
                 }
@@ -324,7 +330,11 @@ export default class Card {
             card.appendChild(preview);
             card.appendChild(details);
             card.addEventListener('click',()=>{
-                window.location="details.html?lat="+this._latitude+"&lon="+this._longitude+"";
+                if(typeof this._name!=="undefined")  {
+                    window.location="details.html?id="+this._uid+"";
+                }else{
+                    window.location="details.html?id=undefined";
+                }
             })
         //End
 

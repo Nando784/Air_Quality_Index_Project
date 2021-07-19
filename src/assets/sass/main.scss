@@ -1,5 +1,6 @@
 @import "other/palette";
 @import "other/fonts";
+@import "other/separator";
 
 @import "other/footer";
 @import "other/scrollbar";
@@ -27,4 +28,18 @@ html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.navigation-details{
+  height: 32px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+
+  img{
+    height: 32px;
+    margin: 0;
+  }
 }

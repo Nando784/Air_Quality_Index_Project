@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
+
     entry: {
         home:'./src/assets/js/entry/home_entry.js',
         search:'./src/assets/js/entry/search_entry.js',
@@ -44,7 +45,6 @@ module.exports = {
 
     module: {
         rules: [
-
             //Sass Loaders
             {
                 test: /\.s[ac]ss$/i,

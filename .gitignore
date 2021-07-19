@@ -2,3 +2,5 @@
 .env
 #Ignora la cartella creata dall'IDE
 .idea/
+#Ignora la cartella test
+**/test

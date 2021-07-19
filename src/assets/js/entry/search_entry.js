@@ -8,11 +8,22 @@ import request from "../request";
 import imgGps from "../../img/icon/Navigation.svg";
 import imgInput from "../../img/icon/Search.svg";
 import imgIco from "../../img/page_icon.png";
+import imgBack from "../../img/icon/back.svg";
 
-function initialize() {
+//Set Page Icon
+let ico = document.createElement('link');
+ico.setAttribute('href', imgIco);
+ico.setAttribute('rel', 'icon');
+ico.setAttribute('type', 'image/ico');
+document.head.appendChild(ico);
 
+//Initialize Element
+window.addEventListener('DOMContentLoaded', main);
 
+function main() {
     try {
+        document.getElementById('back_img_search').setAttribute('src',imgBack);
+
 
         let gpsImg = document.getElementById('nav-ico');
         gpsImg.setAttribute('src', imgGps);
@@ -43,13 +54,3 @@ function initialize() {
     }
 
 }
-
-//Set Page Icon
-let ico = document.createElement('link');
-ico.setAttribute('href', imgIco);
-ico.setAttribute('rel', 'icon');
-ico.setAttribute('type', 'image/ico');
-document.head.appendChild(ico);
-
-//Initialize Element
-window.addEventListener('DOMContentLoaded', initialize);

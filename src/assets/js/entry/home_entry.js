@@ -7,8 +7,10 @@ import img10 from "../../img/PM10.png";
 import imgO3 from "../../img/O3.png";
 import imgNo2 from "../../img/NO2.png";
 
+window.addEventListener('DOMContentLoaded', main);
 
-function initialize() {
+
+function main() {
     try {
         let Pm2_5Img = document.getElementById('pm2_5-img');
         Pm2_5Img.setAttribute('src', img2_5);
@@ -23,6 +25,3 @@ function initialize() {
         No2Img.setAttribute('src', imgNo2);
     } catch (e) {}
 }
-
-
-window.addEventListener('DOMContentLoaded', initialize);

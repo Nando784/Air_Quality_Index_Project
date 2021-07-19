@@ -8,8 +8,233 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <title>Station Details</title>
+
+
+    <style>
+        img{
+            height: 32px;
+        }
+
+        #title{
+            margin-bottom: 0
+        }
+        #subtitle{
+            margin-top: 5px
+        }
+        #head{
+            margin-top: 0;
+        }
+        /*.navigation-details{
+            height: 32px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .navigation-details > img{
+            height: 32px;
+            margin: 0;
+        }*/
+        .container-details{
+            height: 700px;
+            width: 500px;
+            border-radius: 10px;
+            background-color: #DDD5C2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .container-info{
+            width: 100%;
+            height: 100%;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .container-general-info{
+            height: 50%;
+            margin: 5px;
+            width: 95%;
+            display: flex;
+        }
+        .container-h-w,.container-p-t{
+            width: 20%;
+        }
+        .container-aqi-info {
+            width: 60%;
+        }
+        .aqi-number{
+            font-size: 50px;
+            border: 10px solid #F5F5F5;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .aqi-text-description{
+            border: 2px solid #D3D3D3;
+            background-color: #DCDCDC;
+            font-size: 18px;
+            border-radius: 25px;
+            padding: 0;
+            margin:0;
+            display: flex;
+            justify-content: center;
+        }
+        .container-general-info > div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .container-specific-info{
+            height: 50%;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-o3-pm10-pm25,.container-no2-so2-co{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .container-o3-pm10-pm25 > div,.container-no2-so2-co > div{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-o3-pm10-pm25 > div > h3,.container-o3-pm10-pm25 > div > p,.container-no2-so2-co > div > h3,.container-no2-so2-co > div > p{
+            margin:5px;
+        }
+    </style>
 </head>
 <body>
+<div class="div-head text-center">
+    <h1 class="title dark-font"><strong><a class="link-dark" style="text-decoration: none;" href="home.html">Air Quality Index</a></strong></h1>
+</div>
+
+<div class="page-wrapper page-map">
+    <div class="div-bg bg-map">
+        <div id="ui" class="ui-div dark-font">
+            <div class="container-details">
+                <div class="navigation-details">
+                    <a href="search.html" style="text-decoration: none"><img id="back_img" alt="Back" title="Back"></a>
+                </div>
+                <div id="head" class="info-txt text-center">
+                    <h2 id="title"></h2>
+                    <h4 id="subtitle"></h4>
+                    <hr style="width: 80%; margin-bottom: 0;">
+                </div>
+                <div class="container-info">
+                    <div class="container-general-info">
+                        <div class="container-h-w">
+                            <div class="container-h">
+                                <img id="h_img" alt="Humidity" title="Humidity">
+                                <p id="h"></p>
+                            </div>
+                            <div class="container-w">
+                                <img id="w_img" alt="Wind" title="Wind">
+                                <p id="w"></p>
+                            </div>
+                        </div>
+
+                        <div class="container-aqi-info" style="width: 60%;">
+                            <div class="container-aqi">
+                                <h1 id="aqi" class="aqi-number"></h1>
+                            </div>
+                            <div class="container-quality">
+                                <p style="margin-bottom:5px;">Air Quality Index</p>
+                                <p id="aqi_description" class="aqi-text-description"></p>
+                            </div>
+                        </div>
+
+                        <div class="container-p-t">
+                            <div class="container-t">
+                                <img id="t_img" alt="Temperature" title="Temperature">
+                                <p id="t"></p>
+                            </div>
+                            <div class="container-p">
+                                <img id="p_img" alt="Pressure" title="Pressure">
+                                <p id="p"></p>
+                            </div>
+                        </div>
+                    </div><!--Div Container General-->
+                    <div class="container-specific-info">
+                        <div class="container-o3-pm10-pm25">
+                            <div class="container-o3">
+                                <h3>O3</h3>
+                                <p id="o3"></p>
+                            </div>
+                            <div class="container-pm10">
+                                <h3>PM10</h3>
+                                <p id="pm10"></p>
+                            </div>
+                            <div class="container-pm25">
+                                <h3>PM2.5</h3>
+                                <p id="pm25"></p>
+                            </div>
+                        </div>
+
+                        <div class="container-no2-so2-co">
+                            <div class="container-o3">
+                                <h3>NO2</h3>
+                                <p id="no2"></p>
+                            </div>
+                            <div class="container-pm10">
+                                <h3>SO2</h3>
+                                <p id="so2"></p>
+                            </div>
+                            <div class="container-pm25">
+                                <h3>CO</h3>
+                                <p id="co"></p>
+                            </div>
+                        </div>
+                    </div><!--Div Container Specific-->
+                    <p style="margin: 0;">Primary Pollutant:<strong id="primary_pollutant"></strong></p>
+                </div><!--Div Container Info-->
+            </div><!--Div Container-->
+        </div>
+    </div>
+</div>
+
+
+<!--- Footer -->
+<footer class="text-center" style="clear: column;">
+    <div class="nav">
+        <ul>
+            <li class="nav-item active">
+                <a id="home-link" class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a id="search-link" class="nav-link active" href="#">Search</a>
+            </li>
+            <li class="nav-item">
+                <a id="map-link" class="nav-link" href="map.html">Map</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="social">
+        <h5><strong>in</strong></h5>
+        <a href="https://github.com/Nando784" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nando-sorbello-290399" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <!--Copyright-->
+    <p class="copy">&copy; 2021 NANDO SORBELLO</p>
+</footer>
+
 
 </body>
 </html>

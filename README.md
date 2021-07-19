@@ -12,7 +12,6 @@
 - Bootstrap v5.0.1
 - Jquery v3.6.0
 - Lodash v4.17.21
-- Node.js v7.18.1
 - Popper.js v1.16.1
 
 ## Dev-Dependencies
@@ -86,6 +85,7 @@
                     - *_footer.scss*
                     - *_palette.scss*
                     - *_scrollbar.scss*
+                    - *_separator.scss*
                 - *_home.scss*
                 - *_map.scss*
                 - *_search.scss*
@@ -143,7 +143,16 @@
     
 * 0.0.5
     * Update Readme File
-    
+
+* 0.0.6
+    * Add Details Page    
+
+* 0.0.7
+    * Changed Some Aspects of the Details Page and Added the Aqi Widget for a Single City
+
+* 1.0.0
+    * Final Build. Replaced the Aqicn widget with a custom interface. The detail page works correctly. Added "Back" button in the search and details screen.
+
 
 ## Meta
 
