@@ -153,6 +153,15 @@
 * 1.0.0
     * Final Build. Replaced the Aqicn widget with a custom interface. The detail page works correctly. Added "Back" button in the search and details screen.
 
+* 1.0.1
+    * Fix some Bugs
+
+* 1.0.2
+    * Some Style Change
+
+* 1.0.3
+    * Update Readme File
+
 
 ## Meta
 
