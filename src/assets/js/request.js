@@ -223,21 +223,21 @@ export default request = {
             document.getElementById('h').innerHTML = _.get(info, 'h.v') + '%';
         }else {document.getElementById('h').innerHTML = '-';}
 
-        if (typeof _.get(info, 'h.v')!=='undefined'){
+        if (typeof _.get(info, 'w.v')!=='undefined'){
             document.getElementById('w').innerHTML = _.get(info, 'w.v') + '';
         }else {document.getElementById('w').innerHTML = '-';}
 
-        if (typeof _.get(info, 'h.v')!=='undefined'){
+        if (typeof _.get(info, 't.v')!=='undefined'){
             document.getElementById('t').innerHTML = _.get(info, 't.v') + '&#x2103';
         }else {document.getElementById('t').innerHTML = '-';}
 
-        if (typeof _.get(info, 'h.v')!=='undefined'){
+        if (typeof _.get(info, 'p.v')!=='undefined'){
             document.getElementById('p').innerHTML = _.get(info, 'p.v') + '';
         }else {document.getElementById('p').innerHTML = '-';}
 
 
         //Set the aqi (Central)
-        console.log('' + _.get(response, 'data.data.aqi'));
+        //console.log('' + _.get(response, 'data.data.aqi'));
 
         document.getElementById('aqi').innerHTML = _.get(response, 'data.data.aqi') + '';
         document.getElementById('aqi_description').innerHTML = _.get(response, 'data.data.aqi') + '';
