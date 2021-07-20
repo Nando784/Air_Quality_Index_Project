@@ -32,7 +32,7 @@ export default request = {
 
         //Send Request
         try {
-            const response = await axios.get('http://api.waqi.info/search/?keyword=' + document.getElementById('city-txt').value.toLowerCase() + '&token=' + process.env.API_KEY)
+            const response = await axios.get('https://api.waqi.info/search/?keyword=' + document.getElementById('city-txt').value.toLowerCase() + '&token=' + process.env.API_KEY)
                 .catch(function (error) {
                     alert('Sorry, ' + error.message);
                 });
