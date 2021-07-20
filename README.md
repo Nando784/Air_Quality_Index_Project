@@ -163,7 +163,7 @@
     * Update Readme File
     
 * 1.1.0
-    * Update bug relative to map creation 
+    * Fixed bugs related to map creation
 
 
 ## Meta
