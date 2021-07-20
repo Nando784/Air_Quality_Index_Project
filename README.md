@@ -161,6 +161,9 @@
 
 * 1.0.3
     * Update Readme File
+    
+* 1.1.0
+    * Update bug relative to map creation 
 
 
 ## Meta
